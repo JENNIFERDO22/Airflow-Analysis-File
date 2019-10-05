@@ -1,6 +1,6 @@
 # Analysis File with Airflow
 
-Purpose: Illustrate how to work with Airflow.
+Purpose: Illustrate how to work with Airflow in Python.
 
 Workflow: 
 1. Uploading training set file (format .csv) to AWS S3
