@@ -1,0 +1,19 @@
+[2019-09-09 09:40:28,338] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: s3_dag_test.dummy_start 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-09 09:40:28,341] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: s3_dag_test.dummy_start 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-09 09:40:28,341] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-09 09:40:28,341] {taskinstance.py:839} INFO - Starting attempt 6 of 6
+[2019-09-09 09:40:28,341] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-09 09:40:28,361] {taskinstance.py:859} INFO - Executing <Task(DummyOperator): dummy_start> on 2019-01-01T00:00:00+00:00
+[2019-09-09 09:40:28,362] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 's3_dag_test', 'dummy_start', '2019-01-01T00:00:00+00:00', '--job_id', '16', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/upload_file_to_s3.py', '--cfg_path', '/tmp/tmpzy7xgunn']
+[2019-09-09 09:40:28,784] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start [2019-09-09 09:40:28,783] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-09 09:40:29,060] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start [2019-09-09 09:40:29,060] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/upload_file_to_s3.py
+[2019-09-09 09:40:29,061] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-09 09:40:29,062] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start   DeprecationWarning)
+[2019-09-09 09:40:29,063] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-09 09:40:29,063] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start   DeprecationWarning)
+[2019-09-09 09:40:29,257] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start [2019-09-09 09:40:29,256] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-09 09:40:29,286] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start None
+[2019-09-09 09:40:29,295] {base_task_runner.py:115} INFO - Job 16: Subtask dummy_start [2019-09-09 09:40:29,295] {cli.py:516} INFO - Running <TaskInstance: s3_dag_test.dummy_start 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-09 09:40:33,352] {logging_mixin.py:95} INFO - [[34m2019-09-09 09:40:33,351[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

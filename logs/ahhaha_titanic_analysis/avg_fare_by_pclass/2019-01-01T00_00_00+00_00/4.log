@@ -1,0 +1,106 @@
+[2019-09-10 10:02:04,028] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: ahhaha_titanic_analysis.avg_fare_by_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 10:02:04,038] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: ahhaha_titanic_analysis.avg_fare_by_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 10:02:04,039] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 10:02:04,039] {taskinstance.py:839} INFO - Starting attempt 4 of 4
+[2019-09-10 10:02:04,039] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 10:02:04,059] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): avg_fare_by_pclass> on 2019-01-01T00:00:00+00:00
+[2019-09-10 10:02:04,059] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'ahhaha_titanic_analysis', 'avg_fare_by_pclass', '2019-01-01T00:00:00+00:00', '--job_id', '90', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/operations.py', '--cfg_path', '/tmp/tmpd4fw0cv9']
+[2019-09-10 10:02:04,553] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass [2019-09-10 10:02:04,553] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-10 10:02:04,859] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass [2019-09-10 10:02:04,858] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/operations.py
+[2019-09-10 10:02:05,198] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 10:02:05,198] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   DeprecationWarning)
+[2019-09-10 10:02:05,199] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 10:02:05,199] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   DeprecationWarning)
+[2019-09-10 10:02:05,317] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass [2019-09-10 10:02:05,317] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass [2019-09-10 10:02:10,731] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/operations.py
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass Traceback (most recent call last):
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/s3.py", line 30, in get_file_and_filesystem
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     file = fs.open(_strip_schema(filepath_or_buffer), mode)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 689, in open
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     autocommit=ac, **kwargs)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 314, in _open
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     autocommit=autocommit)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 939, in __init__
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     cache_type=cache_type)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 884, in __init__
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     self.details = fs.info(path)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 498, in info
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return super().info(path)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 509, in info
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     raise FileNotFoundError(path)
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass FileNotFoundError: airflow-demo-09092019/titanic-train.csv
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass 
+[2019-09-10 10:02:10,740] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass During handling of the above exception, another exception occurred:
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass 
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass Traceback (most recent call last):
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 332, in _lsdir
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     for i in it:
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/botocore/paginate.py", line 255, in __iter__
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     response = self._make_request(current_kwargs)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/botocore/paginate.py", line 332, in _make_request
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return self._method(**current_kwargs)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/botocore/client.py", line 357, in _api_call
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return self._make_api_call(operation_name, kwargs)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/botocore/client.py", line 661, in _make_api_call
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     raise error_class(parsed_response, operation_name)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass 
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass During handling of the above exception, another exception occurred:
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass 
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass Traceback (most recent call last):
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     m = imp.load_source(mod_name, filepath)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     module = _load(spec)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "<frozen importlib._bootstrap>", line 696, in _load
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/airflow/dags/operations.py", line 14, in <module>
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     from operations import *
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/airflow/dags/operations.py", line 59, in <module>
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     titanic_df = read_csv_from_s3(s3_filename, bucket_name)
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/airflow/dags/task3_read.py", line 7, in read_csv_from_s3
+[2019-09-10 10:02:10,741] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     titanic_df = pd.read_csv(s3_file_path)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return _read(filepath_or_buffer, kwds)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 440, in _read
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     filepath_or_buffer, encoding, compression
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/common.py", line 209, in get_filepath_or_buffer
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     filepath_or_buffer, encoding=encoding, compression=compression, mode=mode
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/s3.py", line 49, in get_filepath_or_buffer
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     file, _fs = get_file_and_filesystem(filepath_or_buffer, mode=mode)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/s3.py", line 39, in get_file_and_filesystem
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     file = fs.open(_strip_schema(filepath_or_buffer), mode)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 689, in open
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     autocommit=ac, **kwargs)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 314, in _open
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     autocommit=autocommit)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 939, in __init__
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     cache_type=cache_type)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 884, in __init__
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     self.details = fs.info(path)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 498, in info
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return super().info(path)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/fsspec/spec.py", line 495, in info
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     out = self.ls(self._parent(path), detail=True, **kwargs)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 516, in ls
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     files = self._ls(path, refresh=refresh)
+[2019-09-10 10:02:10,742] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 441, in _ls
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return self._lsdir(path, refresh)
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/s3fs/core.py", line 347, in _lsdir
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     raise translate_boto_error(e)
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass PermissionError: Access Denied
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass Traceback (most recent call last):
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/bin/airflow", line 32, in <module>
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     args.func(args)
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     return f(*args, **kwargs)
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 500, in run
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     dag = get_dag(args)
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 146, in get_dag
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass     'parse.'.format(args.dag_id))
+[2019-09-10 10:02:10,743] {base_task_runner.py:115} INFO - Job 90: Subtask avg_fare_by_pclass airflow.exceptions.AirflowException: dag_id could not be found: ahhaha_titanic_analysis. Either the dag did not exist or it failed to parse.
+[2019-09-10 10:02:13,996] {logging_mixin.py:95} INFO - [[34m2019-09-10 10:02:13,995[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 1[0m

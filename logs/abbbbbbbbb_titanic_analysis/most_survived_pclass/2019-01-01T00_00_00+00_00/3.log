@@ -1,0 +1,27 @@
+[2019-09-10 17:16:14,279] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:16:14,284] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:16:14,284] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:16:14,284] {taskinstance.py:839} INFO - Starting attempt 3 of 3
+[2019-09-10 17:16:14,284] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:16:14,306] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): most_survived_pclass> on 2019-01-01T00:00:00+00:00
+[2019-09-10 17:16:14,306] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'abbbbbbbbb_titanic_analysis', 'most_survived_pclass', '2019-01-01T00:00:00+00:00', '--job_id', '109', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/titanic_dag.py', '--cfg_path', '/tmp/tmpr3kiy_on']
+[2019-09-10 17:16:14,696] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass [2019-09-10 17:16:14,696] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-10 17:16:14,961] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass [2019-09-10 17:16:14,961] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/titanic_dag.py
+[2019-09-10 17:16:15,173] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:16:15,173] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass   DeprecationWarning)
+[2019-09-10 17:16:15,173] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:16:15,173] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass   DeprecationWarning)
+[2019-09-10 17:16:15,254] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass [2019-09-10 17:16:15,253] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 17:16:17,651] {base_task_runner.py:115} INFO - Job 109: Subtask most_survived_pclass [2019-09-10 17:16:17,651] {cli.py:516} INFO - Running <TaskInstance: abbbbbbbbb_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-10 17:16:17,656] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=abbbbbbbbb_titanic_analysis
+AIRFLOW_CTX_TASK_ID=most_survived_pclass
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2019-09-10 17:16:17,996] {logging_mixin.py:95} INFO - [[34m2019-09-10 17:16:17,996[0m] {[34mtask4_pclass_most_survived.py:[0m30} CRITICAL[0m - PCLASS[0m
+[2019-09-10 17:16:17,997] {logging_mixin.py:95} INFO - [[34m2019-09-10 17:16:17,997[0m] {[34mtask4_pclass_most_survived.py:[0m31} CRITICAL[0m -    Pclass  counts
+0       1     136[0m
+[2019-09-10 17:16:20,577] {python_operator.py:114} INFO - Done. Returned value was: None
+[2019-09-10 17:16:24,299] {logging_mixin.py:95} INFO - [[34m2019-09-10 17:16:24,299[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

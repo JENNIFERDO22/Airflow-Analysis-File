@@ -1,0 +1,37 @@
+[2019-09-10 17:22:37,670] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.read_csv 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:22:37,677] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.read_csv 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:22:37,677] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:22:37,677] {taskinstance.py:839} INFO - Starting attempt 4 of 4
+[2019-09-10 17:22:37,677] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:22:37,696] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): read_csv> on 2019-01-01T00:00:00+00:00
+[2019-09-10 17:22:37,696] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'abbbbbbbbb_titanic_analysis', 'read_csv', '2019-01-01T00:00:00+00:00', '--job_id', '114', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/titanic_dag.py', '--cfg_path', '/tmp/tmp_2rtyocn']
+[2019-09-10 17:22:38,183] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv [2019-09-10 17:22:38,182] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-10 17:22:38,476] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv [2019-09-10 17:22:38,476] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/titanic_dag.py
+[2019-09-10 17:22:38,727] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:22:38,727] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv   DeprecationWarning)
+[2019-09-10 17:22:38,727] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:22:38,727] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv   DeprecationWarning)
+[2019-09-10 17:22:38,803] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv [2019-09-10 17:22:38,803] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 17:22:38,837] {base_task_runner.py:115} INFO - Job 114: Subtask read_csv [2019-09-10 17:22:38,836] {cli.py:516} INFO - Running <TaskInstance: abbbbbbbbb_titanic_analysis.read_csv 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-10 17:22:38,903] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=abbbbbbbbb_titanic_analysis
+AIRFLOW_CTX_TASK_ID=read_csv
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2019-09-10 17:23:10,164] {python_operator.py:114} INFO - Done. Returned value was:      PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+0              1         0       3  ...   7.2500   NaN         S
+1              2         1       1  ...  71.2833   C85         C
+2              3         1       3  ...   7.9250   NaN         S
+3              4         1       1  ...  53.1000  C123         S
+4              5         0       3  ...   8.0500   NaN         S
+..           ...       ...     ...  ...      ...   ...       ...
+886          887         0       2  ...  13.0000   NaN         S
+887          888         1       1  ...  30.0000   B42         S
+888          889         0       3  ...  23.4500   NaN         S
+889          890         1       1  ...  30.0000  C148         C
+890          891         0       3  ...   7.7500   NaN         Q
+
+[891 rows x 12 columns]
+[2019-09-10 17:23:12,686] {logging_mixin.py:95} INFO - [[34m2019-09-10 17:23:12,685[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 0[0m

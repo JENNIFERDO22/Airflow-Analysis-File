@@ -1,0 +1,839 @@
+[2019-09-10 07:57:29,485] {scheduler_job.py:146} INFO - Started process (PID=4312) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:57:29,487] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 07:57:29,487] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,487] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:57:29,572] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,572] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 07:57:29,607] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['aaaaaaaaa_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:57:29,647] {scheduler_job.py:1255} INFO - Processing aaaaaaaaa_titanic_analysis
+[2019-09-10 07:57:29,652] {scheduler_job.py:729} INFO - Examining DAG run <DagRun aaaaaaaaa_titanic_analysis @ 2019-01-01 00:00:00+00:00: scheduled__2019-01-01T00:00:00+00:00, externally triggered: False>
+[2019-09-10 07:57:29,656] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,656] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: aaaaaaaaa_titanic_analysis.dummy_start 2019-01-01 00:00:00+00:00 [None]>' for dag '<DAG: aaaaaaaaa_titanic_analysis>'. Marking it as removed.
+[2019-09-10 07:57:29,657] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,656] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: aaaaaaaaa_titanic_analysis.upload_file_to_s3 2019-01-01 00:00:00+00:00 [None]>' for dag '<DAG: aaaaaaaaa_titanic_analysis>'. Marking it as removed.
+[2019-09-10 07:57:29,657] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,657] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: aaaaaaaaa_titanic_analysis.read_csv 2019-01-01 00:00:00+00:00 [None]>' for dag '<DAG: aaaaaaaaa_titanic_analysis>'. Marking it as removed.
+[2019-09-10 07:57:29,657] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,657] {dagrun.py:373} WARNING - Failed to get task '<TaskInstance: aaaaaaaaa_titanic_analysis.most_survived_pclass 2019-01-01 00:00:00+00:00 [None]>' for dag '<DAG: aaaaaaaaa_titanic_analysis>'. Marking it as removed.
+[2019-09-10 07:57:29,681] {logging_mixin.py:95} INFO - [2019-09-10 07:57:29,680] {dagrun.py:316} INFO - Marking run <DagRun aaaaaaaaa_titanic_analysis @ 2019-01-01 00:00:00+00:00: scheduled__2019-01-01T00:00:00+00:00, externally triggered: False> successful
+[2019-09-10 07:57:29,698] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: aaaaaaaaa_titanic_analysis> because no tasks in DAG have SLAs
+[2019-09-10 07:57:29,702] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.217 seconds
+[2019-09-10 07:58:11,543] {scheduler_job.py:146} INFO - Started process (PID=4540) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:11,550] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 07:58:11,551] {logging_mixin.py:95} INFO - [2019-09-10 07:58:11,551] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:11,657] {logging_mixin.py:95} INFO - [2019-09-10 07:58:11,656] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 07:58:11,696] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['aaaaaaaaa_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:11,729] {scheduler_job.py:1255} INFO - Processing aaaaaaaaa_titanic_analysis
+[2019-09-10 07:58:11,737] {scheduler_job.py:429} INFO - Skipping SLA check for <DAG: aaaaaaaaa_titanic_analysis> because no tasks in DAG have SLAs
+[2019-09-10 07:58:11,744] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.200 seconds
+[2019-09-10 07:58:53,586] {scheduler_job.py:146} INFO - Started process (PID=4610) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:53,591] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 07:58:53,591] {logging_mixin.py:95} INFO - [2019-09-10 07:58:53,591] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:53,681] {logging_mixin.py:95} INFO - [2019-09-10 07:58:53,681] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 07:58:53,710] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:58:53,715] {logging_mixin.py:95} INFO - [2019-09-10 07:58:53,715] {dag.py:1323} INFO - Creating ORM DAG for hello_titanic_analysis
+[2019-09-10 07:58:53,760] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.174 seconds
+[2019-09-10 07:59:35,628] {scheduler_job.py:146} INFO - Started process (PID=4659) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:59:35,633] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 07:59:35,634] {logging_mixin.py:95} INFO - [2019-09-10 07:59:35,633] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:59:35,734] {logging_mixin.py:95} INFO - [2019-09-10 07:59:35,734] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 07:59:35,758] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 07:59:35,791] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.163 seconds
+[2019-09-10 08:00:17,682] {scheduler_job.py:146} INFO - Started process (PID=4756) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:17,687] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:00:17,688] {logging_mixin.py:95} INFO - [2019-09-10 08:00:17,687] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:17,762] {logging_mixin.py:95} INFO - [2019-09-10 08:00:17,762] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:00:17,787] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:17,829] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.147 seconds
+[2019-09-10 08:00:59,716] {scheduler_job.py:146} INFO - Started process (PID=4812) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:59,718] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:00:59,718] {logging_mixin.py:95} INFO - [2019-09-10 08:00:59,718] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:59,804] {logging_mixin.py:95} INFO - [2019-09-10 08:00:59,804] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:00:59,830] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:00:59,866] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.149 seconds
+[2019-09-10 08:01:41,773] {scheduler_job.py:146} INFO - Started process (PID=4863) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:01:41,779] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:01:41,779] {logging_mixin.py:95} INFO - [2019-09-10 08:01:41,779] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:01:41,859] {logging_mixin.py:95} INFO - [2019-09-10 08:01:41,859] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:01:41,882] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:01:41,912] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.139 seconds
+[2019-09-10 08:02:23,807] {scheduler_job.py:146} INFO - Started process (PID=4907) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:02:23,808] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:02:23,808] {logging_mixin.py:95} INFO - [2019-09-10 08:02:23,808] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:02:23,871] {logging_mixin.py:95} INFO - [2019-09-10 08:02:23,871] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:02:23,896] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:02:23,929] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.123 seconds
+[2019-09-10 08:03:05,863] {scheduler_job.py:146} INFO - Started process (PID=4988) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:05,868] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:03:05,869] {logging_mixin.py:95} INFO - [2019-09-10 08:03:05,869] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:05,942] {logging_mixin.py:95} INFO - [2019-09-10 08:03:05,942] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:03:05,968] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:05,995] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.132 seconds
+[2019-09-10 08:03:47,896] {scheduler_job.py:146} INFO - Started process (PID=5143) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:47,898] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:03:47,898] {logging_mixin.py:95} INFO - [2019-09-10 08:03:47,898] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:47,988] {logging_mixin.py:95} INFO - [2019-09-10 08:03:47,988] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:03:48,027] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:03:48,076] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.179 seconds
+[2019-09-10 08:04:29,953] {scheduler_job.py:146} INFO - Started process (PID=5209) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:04:29,958] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:04:29,959] {logging_mixin.py:95} INFO - [2019-09-10 08:04:29,959] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:04:30,034] {logging_mixin.py:95} INFO - [2019-09-10 08:04:30,034] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:04:30,058] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:04:30,097] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.144 seconds
+[2019-09-10 08:05:11,999] {scheduler_job.py:146} INFO - Started process (PID=5321) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:12,004] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:05:12,005] {logging_mixin.py:95} INFO - [2019-09-10 08:05:12,005] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:12,116] {logging_mixin.py:95} INFO - [2019-09-10 08:05:12,116] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:05:12,140] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:12,172] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.174 seconds
+[2019-09-10 08:05:54,059] {scheduler_job.py:146} INFO - Started process (PID=5377) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:54,065] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:05:54,066] {logging_mixin.py:95} INFO - [2019-09-10 08:05:54,065] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:54,155] {logging_mixin.py:95} INFO - [2019-09-10 08:05:54,155] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:05:54,180] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:05:54,224] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.166 seconds
+[2019-09-10 08:06:36,077] {scheduler_job.py:146} INFO - Started process (PID=5425) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:06:36,078] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:06:36,078] {logging_mixin.py:95} INFO - [2019-09-10 08:06:36,078] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:06:36,140] {logging_mixin.py:95} INFO - [2019-09-10 08:06:36,139] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:06:36,167] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:06:36,195] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.118 seconds
+[2019-09-10 08:07:18,118] {scheduler_job.py:146} INFO - Started process (PID=5461) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:07:18,119] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:07:18,119] {logging_mixin.py:95} INFO - [2019-09-10 08:07:18,119] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:07:18,190] {logging_mixin.py:95} INFO - [2019-09-10 08:07:18,190] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:07:18,218] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:07:18,245] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.127 seconds
+[2019-09-10 08:08:00,157] {scheduler_job.py:146} INFO - Started process (PID=5525) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:00,159] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:08:00,159] {logging_mixin.py:95} INFO - [2019-09-10 08:08:00,159] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:00,227] {logging_mixin.py:95} INFO - [2019-09-10 08:08:00,227] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:08:00,256] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:00,285] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.127 seconds
+[2019-09-10 08:08:42,207] {scheduler_job.py:146} INFO - Started process (PID=5732) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:42,209] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:08:42,209] {logging_mixin.py:95} INFO - [2019-09-10 08:08:42,209] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:42,308] {logging_mixin.py:95} INFO - [2019-09-10 08:08:42,308] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:08:42,337] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:08:42,367] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.160 seconds
+[2019-09-10 08:09:24,250] {scheduler_job.py:146} INFO - Started process (PID=5802) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:09:24,256] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:09:24,257] {logging_mixin.py:95} INFO - [2019-09-10 08:09:24,257] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:09:24,336] {logging_mixin.py:95} INFO - [2019-09-10 08:09:24,336] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:09:24,363] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:09:24,396] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.146 seconds
+[2019-09-10 08:10:06,291] {scheduler_job.py:146} INFO - Started process (PID=5899) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:06,296] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:10:06,297] {logging_mixin.py:95} INFO - [2019-09-10 08:10:06,297] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:06,373] {logging_mixin.py:95} INFO - [2019-09-10 08:10:06,372] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:10:06,397] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:06,424] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.133 seconds
+[2019-09-10 08:10:48,317] {scheduler_job.py:146} INFO - Started process (PID=6002) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:48,319] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:10:48,319] {logging_mixin.py:95} INFO - [2019-09-10 08:10:48,319] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:48,386] {logging_mixin.py:95} INFO - [2019-09-10 08:10:48,386] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:10:48,415] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:10:48,445] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.127 seconds
+[2019-09-10 08:11:30,362] {scheduler_job.py:146} INFO - Started process (PID=6177) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:11:30,363] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:11:30,363] {logging_mixin.py:95} INFO - [2019-09-10 08:11:30,363] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:11:30,419] {logging_mixin.py:95} INFO - [2019-09-10 08:11:30,419] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:11:30,443] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:11:30,471] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.109 seconds
+[2019-09-10 08:12:12,407] {scheduler_job.py:146} INFO - Started process (PID=6285) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:12,409] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:12:12,409] {logging_mixin.py:95} INFO - [2019-09-10 08:12:12,409] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:12,474] {logging_mixin.py:95} INFO - [2019-09-10 08:12:12,474] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:12:12,501] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:12,530] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.123 seconds
+[2019-09-10 08:12:54,449] {scheduler_job.py:146} INFO - Started process (PID=6343) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:54,452] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:12:54,452] {logging_mixin.py:95} INFO - [2019-09-10 08:12:54,452] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:54,549] {logging_mixin.py:95} INFO - [2019-09-10 08:12:54,548] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:12:54,596] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:12:54,635] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.186 seconds
+[2019-09-10 08:13:36,485] {scheduler_job.py:146} INFO - Started process (PID=6403) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:13:36,487] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:13:36,487] {logging_mixin.py:95} INFO - [2019-09-10 08:13:36,487] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:13:36,553] {logging_mixin.py:95} INFO - [2019-09-10 08:13:36,553] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:13:36,580] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:13:36,609] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.123 seconds
+[2019-09-10 08:14:18,529] {scheduler_job.py:146} INFO - Started process (PID=6451) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:14:18,531] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:14:18,532] {logging_mixin.py:95} INFO - [2019-09-10 08:14:18,532] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:14:18,598] {logging_mixin.py:95} INFO - [2019-09-10 08:14:18,597] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:14:18,624] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:14:18,655] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.127 seconds
+[2019-09-10 08:15:00,570] {scheduler_job.py:146} INFO - Started process (PID=6502) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:00,572] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:15:00,573] {logging_mixin.py:95} INFO - [2019-09-10 08:15:00,573] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:00,658] {logging_mixin.py:95} INFO - [2019-09-10 08:15:00,658] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:15:00,693] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:00,726] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.156 seconds
+[2019-09-10 08:15:42,612] {scheduler_job.py:146} INFO - Started process (PID=6559) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:42,614] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:15:42,614] {logging_mixin.py:95} INFO - [2019-09-10 08:15:42,614] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:42,716] {logging_mixin.py:95} INFO - [2019-09-10 08:15:42,716] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:15:42,761] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:15:42,797] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.186 seconds
+[2019-09-10 08:16:24,667] {scheduler_job.py:146} INFO - Started process (PID=6689) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:16:24,669] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:16:24,670] {logging_mixin.py:95} INFO - [2019-09-10 08:16:24,670] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:16:24,731] {logging_mixin.py:95} INFO - [2019-09-10 08:16:24,730] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:16:24,756] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:16:24,785] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.118 seconds
+[2019-09-10 08:17:06,711] {scheduler_job.py:146} INFO - Started process (PID=6751) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:06,713] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:17:06,713] {logging_mixin.py:95} INFO - [2019-09-10 08:17:06,713] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:06,816] {logging_mixin.py:95} INFO - [2019-09-10 08:17:06,816] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:17:06,853] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:06,891] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.180 seconds
+[2019-09-10 08:17:48,762] {scheduler_job.py:146} INFO - Started process (PID=6860) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:48,763] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:17:48,763] {logging_mixin.py:95} INFO - [2019-09-10 08:17:48,763] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:48,823] {logging_mixin.py:95} INFO - [2019-09-10 08:17:48,823] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:17:48,847] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:17:48,874] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.112 seconds
+[2019-09-10 08:18:30,802] {scheduler_job.py:146} INFO - Started process (PID=6947) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:18:30,804] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:18:30,805] {logging_mixin.py:95} INFO - [2019-09-10 08:18:30,805] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:18:30,870] {logging_mixin.py:95} INFO - [2019-09-10 08:18:30,869] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:18:30,898] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:18:30,927] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.125 seconds
+[2019-09-10 08:19:12,844] {scheduler_job.py:146} INFO - Started process (PID=7009) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:12,846] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:19:12,846] {logging_mixin.py:95} INFO - [2019-09-10 08:19:12,846] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:12,916] {logging_mixin.py:95} INFO - [2019-09-10 08:19:12,916] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:19:12,945] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:12,976] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.131 seconds
+[2019-09-10 08:19:54,891] {scheduler_job.py:146} INFO - Started process (PID=7050) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:54,893] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:19:54,893] {logging_mixin.py:95} INFO - [2019-09-10 08:19:54,893] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:54,979] {logging_mixin.py:95} INFO - [2019-09-10 08:19:54,979] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:19:55,017] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:19:55,051] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.160 seconds
+[2019-09-10 08:20:36,931] {scheduler_job.py:146} INFO - Started process (PID=7134) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:20:36,933] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:20:36,933] {logging_mixin.py:95} INFO - [2019-09-10 08:20:36,933] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:20:37,016] {logging_mixin.py:95} INFO - [2019-09-10 08:20:37,016] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:20:37,053] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:20:37,087] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.156 seconds
+[2019-09-10 08:21:18,978] {scheduler_job.py:146} INFO - Started process (PID=7246) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:21:18,980] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:21:18,980] {logging_mixin.py:95} INFO - [2019-09-10 08:21:18,980] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:21:19,049] {logging_mixin.py:95} INFO - [2019-09-10 08:21:19,049] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:21:19,077] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:21:19,106] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.128 seconds
+[2019-09-10 08:22:01,077] {scheduler_job.py:146} INFO - Started process (PID=7321) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:01,078] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:22:01,078] {logging_mixin.py:95} INFO - [2019-09-10 08:22:01,078] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:01,132] {logging_mixin.py:95} INFO - [2019-09-10 08:22:01,132] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:22:01,155] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:01,200] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.123 seconds
+[2019-09-10 08:22:43,081] {scheduler_job.py:146} INFO - Started process (PID=7392) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:43,082] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:22:43,082] {logging_mixin.py:95} INFO - [2019-09-10 08:22:43,082] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:43,145] {logging_mixin.py:95} INFO - [2019-09-10 08:22:43,145] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:22:43,169] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:22:43,210] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.129 seconds
+[2019-09-10 08:23:25,144] {scheduler_job.py:146} INFO - Started process (PID=7446) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:23:25,150] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:23:25,151] {logging_mixin.py:95} INFO - [2019-09-10 08:23:25,150] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:23:25,249] {logging_mixin.py:95} INFO - [2019-09-10 08:23:25,249] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:23:25,274] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:23:25,305] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.161 seconds
+[2019-09-10 08:24:07,194] {scheduler_job.py:146} INFO - Started process (PID=7491) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:07,200] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:24:07,200] {logging_mixin.py:95} INFO - [2019-09-10 08:24:07,200] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:07,274] {logging_mixin.py:95} INFO - [2019-09-10 08:24:07,274] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:24:07,300] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:07,341] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.146 seconds
+[2019-09-10 08:24:49,234] {scheduler_job.py:146} INFO - Started process (PID=7545) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:49,235] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:24:49,235] {logging_mixin.py:95} INFO - [2019-09-10 08:24:49,235] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:49,291] {logging_mixin.py:95} INFO - [2019-09-10 08:24:49,291] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:24:49,314] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:24:49,342] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.108 seconds
+[2019-09-10 08:25:31,288] {scheduler_job.py:146} INFO - Started process (PID=7577) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:25:31,290] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:25:31,290] {logging_mixin.py:95} INFO - [2019-09-10 08:25:31,290] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:25:31,346] {logging_mixin.py:95} INFO - [2019-09-10 08:25:31,346] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:25:31,370] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:25:31,399] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.111 seconds
+[2019-09-10 08:26:13,343] {scheduler_job.py:146} INFO - Started process (PID=7629) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:13,345] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:26:13,345] {logging_mixin.py:95} INFO - [2019-09-10 08:26:13,345] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:13,399] {logging_mixin.py:95} INFO - [2019-09-10 08:26:13,399] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:26:13,422] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:13,451] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.107 seconds
+[2019-09-10 08:26:55,401] {scheduler_job.py:146} INFO - Started process (PID=7670) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:55,402] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:26:55,403] {logging_mixin.py:95} INFO - [2019-09-10 08:26:55,402] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:55,459] {logging_mixin.py:95} INFO - [2019-09-10 08:26:55,459] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:26:55,482] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:26:55,511] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.110 seconds
+[2019-09-10 08:27:37,460] {scheduler_job.py:146} INFO - Started process (PID=7702) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:27:37,461] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:27:37,461] {logging_mixin.py:95} INFO - [2019-09-10 08:27:37,461] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:27:37,517] {logging_mixin.py:95} INFO - [2019-09-10 08:27:37,517] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:27:37,540] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:27:37,568] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.108 seconds
+[2019-09-10 08:28:19,521] {scheduler_job.py:146} INFO - Started process (PID=7739) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:28:19,522] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:28:19,522] {logging_mixin.py:95} INFO - [2019-09-10 08:28:19,522] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:28:19,577] {logging_mixin.py:95} INFO - [2019-09-10 08:28:19,577] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:28:19,600] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:28:19,629] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.108 seconds
+[2019-09-10 08:29:01,580] {scheduler_job.py:146} INFO - Started process (PID=7784) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:01,582] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:29:01,582] {logging_mixin.py:95} INFO - [2019-09-10 08:29:01,582] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:01,637] {logging_mixin.py:95} INFO - [2019-09-10 08:29:01,637] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:29:01,660] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:01,689] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.109 seconds
+[2019-09-10 08:29:43,636] {scheduler_job.py:146} INFO - Started process (PID=7838) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:43,637] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:29:43,637] {logging_mixin.py:95} INFO - [2019-09-10 08:29:43,637] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:43,699] {logging_mixin.py:95} INFO - [2019-09-10 08:29:43,699] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:29:43,722] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:29:43,757] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.121 seconds
+[2019-09-10 08:30:25,702] {scheduler_job.py:146} INFO - Started process (PID=7879) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:30:25,707] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:30:25,708] {logging_mixin.py:95} INFO - [2019-09-10 08:30:25,707] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:30:25,785] {logging_mixin.py:95} INFO - [2019-09-10 08:30:25,785] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:30:25,811] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:30:25,854] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.152 seconds
+[2019-09-10 08:31:07,742] {scheduler_job.py:146} INFO - Started process (PID=7952) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:07,744] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:31:07,744] {logging_mixin.py:95} INFO - [2019-09-10 08:31:07,744] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:07,800] {logging_mixin.py:95} INFO - [2019-09-10 08:31:07,800] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:31:07,825] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:07,863] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.120 seconds
+[2019-09-10 08:31:49,803] {scheduler_job.py:146} INFO - Started process (PID=7995) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:49,810] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:31:49,811] {logging_mixin.py:95} INFO - [2019-09-10 08:31:49,811] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:49,947] {logging_mixin.py:95} INFO - [2019-09-10 08:31:49,947] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:31:49,973] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:31:50,018] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.215 seconds
+[2019-09-10 08:32:31,831] {scheduler_job.py:146} INFO - Started process (PID=8051) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:32:31,833] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:32:31,833] {logging_mixin.py:95} INFO - [2019-09-10 08:32:31,833] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:32:31,888] {logging_mixin.py:95} INFO - [2019-09-10 08:32:31,888] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:32:31,911] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:32:31,939] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.108 seconds
+[2019-09-10 08:33:13,879] {scheduler_job.py:146} INFO - Started process (PID=8116) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:13,880] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:33:13,881] {logging_mixin.py:95} INFO - [2019-09-10 08:33:13,880] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:13,946] {logging_mixin.py:95} INFO - [2019-09-10 08:33:13,945] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:33:13,973] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:14,002] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.123 seconds
+[2019-09-10 08:33:55,942] {scheduler_job.py:146} INFO - Started process (PID=8169) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:55,946] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:33:55,947] {logging_mixin.py:95} INFO - [2019-09-10 08:33:55,947] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:56,024] {logging_mixin.py:95} INFO - [2019-09-10 08:33:56,024] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:33:56,050] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:33:56,080] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.138 seconds
+[2019-09-10 08:34:37,991] {scheduler_job.py:146} INFO - Started process (PID=8221) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:34:37,997] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:34:37,997] {logging_mixin.py:95} INFO - [2019-09-10 08:34:37,997] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:34:38,077] {logging_mixin.py:95} INFO - [2019-09-10 08:34:38,076] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:34:38,114] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:34:38,148] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.157 seconds
+[2019-09-10 08:35:20,037] {scheduler_job.py:146} INFO - Started process (PID=8274) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:35:20,044] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:35:20,044] {logging_mixin.py:95} INFO - [2019-09-10 08:35:20,044] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:35:20,154] {logging_mixin.py:95} INFO - [2019-09-10 08:35:20,154] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:35:20,177] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:35:20,207] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.170 seconds
+[2019-09-10 08:36:02,080] {scheduler_job.py:146} INFO - Started process (PID=8335) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:02,081] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:36:02,081] {logging_mixin.py:95} INFO - [2019-09-10 08:36:02,081] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:02,136] {logging_mixin.py:95} INFO - [2019-09-10 08:36:02,136] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 08:36:02,159] {scheduler_job.py:1532} INFO - DAG(s) dict_keys(['hello_titanic_analysis']) retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:02,187] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.108 seconds
+[2019-09-10 08:36:44,143] {scheduler_job.py:146} INFO - Started process (PID=8397) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:44,150] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:36:44,151] {logging_mixin.py:95} INFO - [2019-09-10 08:36:44,151] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:44,272] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:36:44,273] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:36:44,275] {logging_mixin.py:95} INFO - [2019-09-10 08:36:44,273] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:36:44,275] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:36:44,299] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.157 seconds
+[2019-09-10 08:37:26,179] {scheduler_job.py:146} INFO - Started process (PID=8465) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:37:26,186] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:37:26,187] {logging_mixin.py:95} INFO - [2019-09-10 08:37:26,187] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:37:26,257] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:37:26,258] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:37:26,258] {logging_mixin.py:95} INFO - [2019-09-10 08:37:26,258] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:37:26,258] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:37:26,280] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.101 seconds
+[2019-09-10 08:38:08,218] {scheduler_job.py:146} INFO - Started process (PID=8531) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:08,220] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:38:08,220] {logging_mixin.py:95} INFO - [2019-09-10 08:38:08,220] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:08,258] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:38:08,259] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:38:08,259] {logging_mixin.py:95} INFO - [2019-09-10 08:38:08,259] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:38:08,259] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:08,281] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.062 seconds
+[2019-09-10 08:38:50,277] {scheduler_job.py:146} INFO - Started process (PID=8566) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:50,279] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:38:50,279] {logging_mixin.py:95} INFO - [2019-09-10 08:38:50,279] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:50,322] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:38:50,323] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:38:50,323] {logging_mixin.py:95} INFO - [2019-09-10 08:38:50,323] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:38:50,323] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:38:50,342] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.064 seconds
+[2019-09-10 08:39:32,321] {scheduler_job.py:146} INFO - Started process (PID=8630) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:39:32,323] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:39:32,323] {logging_mixin.py:95} INFO - [2019-09-10 08:39:32,323] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:39:32,362] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:39:32,362] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:39:32,363] {logging_mixin.py:95} INFO - [2019-09-10 08:39:32,362] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:39:32,363] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:39:32,384] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.063 seconds
+[2019-09-10 08:40:14,381] {scheduler_job.py:146} INFO - Started process (PID=8670) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:14,388] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:40:14,389] {logging_mixin.py:95} INFO - [2019-09-10 08:40:14,389] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:14,448] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:40:14,449] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:40:14,449] {logging_mixin.py:95} INFO - [2019-09-10 08:40:14,449] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:40:14,449] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:14,470] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.089 seconds
+[2019-09-10 08:40:56,417] {scheduler_job.py:146} INFO - Started process (PID=8734) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:56,419] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:40:56,419] {logging_mixin.py:95} INFO - [2019-09-10 08:40:56,419] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:56,461] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:40:56,462] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:40:56,462] {logging_mixin.py:95} INFO - [2019-09-10 08:40:56,462] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:40:56,462] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:40:56,483] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.066 seconds
+[2019-09-10 08:41:38,465] {scheduler_job.py:146} INFO - Started process (PID=9112) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:41:38,467] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:41:38,467] {logging_mixin.py:95} INFO - [2019-09-10 08:41:38,467] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:41:38,522] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:41:38,522] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:41:38,522] {logging_mixin.py:95} INFO - [2019-09-10 08:41:38,522] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:41:38,523] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:41:38,544] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.080 seconds
+[2019-09-10 08:42:07,207] {scheduler_job.py:146} INFO - Started process (PID=9144) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:07,211] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:42:07,212] {logging_mixin.py:95} INFO - [2019-09-10 08:42:07,212] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:07,276] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:42:07,276] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:42:07,277] {logging_mixin.py:95} INFO - [2019-09-10 08:42:07,276] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:42:07,277] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:07,312] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.106 seconds
+[2019-09-10 08:42:49,248] {scheduler_job.py:146} INFO - Started process (PID=9328) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:49,249] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:42:49,249] {logging_mixin.py:95} INFO - [2019-09-10 08:42:49,249] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:49,290] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:42:49,291] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:42:49,291] {logging_mixin.py:95} INFO - [2019-09-10 08:42:49,291] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:42:49,291] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:42:49,318] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.071 seconds
+[2019-09-10 08:43:31,308] {scheduler_job.py:146} INFO - Started process (PID=9417) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:43:31,313] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:43:31,314] {logging_mixin.py:95} INFO - [2019-09-10 08:43:31,314] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:43:31,370] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:43:31,370] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:43:31,371] {logging_mixin.py:95} INFO - [2019-09-10 08:43:31,371] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:43:31,371] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:43:31,398] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.090 seconds
+[2019-09-10 08:44:13,338] {scheduler_job.py:146} INFO - Started process (PID=9531) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:13,339] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:44:13,339] {logging_mixin.py:95} INFO - [2019-09-10 08:44:13,339] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:13,384] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:44:13,384] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:44:13,385] {logging_mixin.py:95} INFO - [2019-09-10 08:44:13,385] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:44:13,385] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:13,413] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.075 seconds
+[2019-09-10 08:44:55,396] {scheduler_job.py:146} INFO - Started process (PID=9583) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:55,401] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:44:55,402] {logging_mixin.py:95} INFO - [2019-09-10 08:44:55,402] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:55,500] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:44:55,500] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:44:55,501] {logging_mixin.py:95} INFO - [2019-09-10 08:44:55,500] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:44:55,501] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:44:55,524] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.128 seconds
+[2019-09-10 08:45:37,444] {scheduler_job.py:146} INFO - Started process (PID=9646) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:45:37,449] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:45:37,449] {logging_mixin.py:95} INFO - [2019-09-10 08:45:37,449] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:45:37,512] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:45:37,512] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:45:37,513] {logging_mixin.py:95} INFO - [2019-09-10 08:45:37,512] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:45:37,513] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:45:37,532] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.089 seconds
+[2019-09-10 08:46:19,486] {scheduler_job.py:146} INFO - Started process (PID=9725) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:46:19,487] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:46:19,487] {logging_mixin.py:95} INFO - [2019-09-10 08:46:19,487] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:46:19,526] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:46:19,526] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:46:19,526] {logging_mixin.py:95} INFO - [2019-09-10 08:46:19,526] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:46:19,526] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:46:19,554] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.068 seconds
+[2019-09-10 08:47:01,541] {scheduler_job.py:146} INFO - Started process (PID=9771) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:01,542] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:47:01,542] {logging_mixin.py:95} INFO - [2019-09-10 08:47:01,542] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:01,584] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:47:01,585] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:47:01,585] {logging_mixin.py:95} INFO - [2019-09-10 08:47:01,585] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    import operations
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:47:01,585] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:01,613] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.072 seconds
+[2019-09-10 08:47:43,596] {scheduler_job.py:146} INFO - Started process (PID=9819) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:43,599] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:47:43,600] {logging_mixin.py:95} INFO - [2019-09-10 08:47:43,600] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:43,707] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:47:43,707] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:47:43,708] {logging_mixin.py:95} INFO - [2019-09-10 08:47:43,707] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    from operations import *
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:47:43,708] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:47:43,733] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.137 seconds
+[2019-09-10 08:48:25,649] {scheduler_job.py:146} INFO - Started process (PID=9866) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:48:25,654] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:48:25,655] {logging_mixin.py:95} INFO - [2019-09-10 08:48:25,655] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:48:25,716] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:48:25,717] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:48:25,718] {logging_mixin.py:95} INFO - [2019-09-10 08:48:25,717] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    from operations import *
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:48:25,718] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:48:25,745] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.095 seconds
+[2019-09-10 08:49:07,700] {scheduler_job.py:146} INFO - Started process (PID=9906) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:07,705] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:49:07,705] {logging_mixin.py:95} INFO - [2019-09-10 08:49:07,705] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:07,762] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:49:07,762] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:49:07,763] {logging_mixin.py:95} INFO - [2019-09-10 08:49:07,762] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    from operations import *
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:49:07,763] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:07,791] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.091 seconds
+[2019-09-10 08:49:49,737] {scheduler_job.py:146} INFO - Started process (PID=9953) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:49,739] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:49:49,739] {logging_mixin.py:95} INFO - [2019-09-10 08:49:49,739] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:49,781] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:49:49,782] {logging_mixin.py:95} WARNING - /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-09-10 08:49:49,782] {logging_mixin.py:95} INFO - [2019-09-10 08:49:49,782] {dagbag.py:205} ERROR - Failed to import: /home/jennie/airflow/dags/create_dag.py
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/dagbag.py", line 202, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/jennie/airflow/dags/create_dag.py", line 4, in <module>
+    from operations import *
+  File "/home/jennie/airflow/dags/operations.py", line 9, in <module>
+    dag=dag
+NameError: name 'dag' is not defined
+[2019-09-10 08:49:49,782] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:49:49,816] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.078 seconds
+[2019-09-10 08:50:31,797] {scheduler_job.py:146} INFO - Started process (PID=10017) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:50:31,803] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:50:31,804] {logging_mixin.py:95} INFO - [2019-09-10 08:50:31,804] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:50:31,806] {logging_mixin.py:95} INFO - [2019-09-10 08:50:31,806] {dagbag.py:188} INFO - File /home/jennie/airflow/dags/create_dag.py assumed to contain no DAGs. Skipping.
+[2019-09-10 08:50:31,806] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:50:31,841] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.044 seconds
+[2019-09-10 08:51:13,833] {scheduler_job.py:146} INFO - Started process (PID=10078) to work on /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:51:13,836] {scheduler_job.py:1520} INFO - Processing file /home/jennie/airflow/dags/create_dag.py for tasks to queue
+[2019-09-10 08:51:13,836] {logging_mixin.py:95} INFO - [2019-09-10 08:51:13,836] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:51:13,837] {logging_mixin.py:95} INFO - [2019-09-10 08:51:13,837] {dagbag.py:188} INFO - File /home/jennie/airflow/dags/create_dag.py assumed to contain no DAGs. Skipping.
+[2019-09-10 08:51:13,837] {scheduler_job.py:1534} WARNING - No viable dags retrieved from /home/jennie/airflow/dags/create_dag.py
+[2019-09-10 08:51:13,844] {scheduler_job.py:152} INFO - Processing /home/jennie/airflow/dags/create_dag.py took 0.010 seconds

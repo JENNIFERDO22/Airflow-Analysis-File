@@ -1,0 +1,76 @@
+[2019-09-09 09:55:37,591] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: s3_dag_test.read_csv 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-09 09:55:37,595] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: s3_dag_test.read_csv 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-09 09:55:37,595] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-09 09:55:37,595] {taskinstance.py:839} INFO - Starting attempt 5 of 5
+[2019-09-09 09:55:37,595] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-09 09:55:37,616] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): read_csv> on 2019-01-01T00:00:00+00:00
+[2019-09-09 09:55:37,616] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 's3_dag_test', 'read_csv', '2019-01-01T00:00:00+00:00', '--job_id', '21', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/upload_file_to_s3.py', '--cfg_path', '/tmp/tmpv28h5yxu']
+[2019-09-09 09:55:38,022] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv [2019-09-09 09:55:38,022] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-09 09:55:38,293] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv [2019-09-09 09:55:38,293] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/upload_file_to_s3.py
+[2019-09-09 09:55:38,295] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-09 09:55:38,295] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   DeprecationWarning)
+[2019-09-09 09:55:38,297] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-09 09:55:38,297] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   DeprecationWarning)
+[2019-09-09 09:55:38,477] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv [2019-09-09 09:55:38,476] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-09 09:55:38,502] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv None
+[2019-09-09 09:55:38,511] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv [2019-09-09 09:55:38,511] {cli.py:516} INFO - Running <TaskInstance: s3_dag_test.read_csv 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-09 09:55:38,516] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=s3_dag_test
+AIRFLOW_CTX_TASK_ID=read_csv
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2019-09-09 09:55:39,629] {taskinstance.py:1051} ERROR - Missing optional dependency 's3fs'. The s3fs package is required to handle s3 files. Use pip or conda to install s3fs.
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/jennie/airflow/dags/upload_file_to_s3.py", line 55, in read_csv_from_s3
+    titanic_df = pd.read_csv(s3_file_path)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 440, in _read
+    filepath_or_buffer, encoding, compression
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/common.py", line 206, in get_filepath_or_buffer
+    from pandas.io import s3
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/s3.py", line 10, in <module>
+    "s3fs", extra="The s3fs package is required to handle s3 files."
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/compat/_optional.py", line 93, in import_optional_dependency
+    raise ImportError(message.format(name=name, extra=extra)) from None
+ImportError: Missing optional dependency 's3fs'. The s3fs package is required to handle s3 files. Use pip or conda to install s3fs.
+[2019-09-09 09:55:39,634] {taskinstance.py:1082} INFO - Marking task as FAILED.
+[2019-09-09 09:55:39,675] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv Traceback (most recent call last):
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/bin/airflow", line 32, in <module>
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     args.func(args)
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     return f(*args, **kwargs)
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     _run(args, dag, ti)
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     pool=args.pool,
+[2019-09-09 09:55:39,676] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     return func(*args, **kwargs)
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     result = task_copy.execute(context=context)
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     return_value = self.execute_callable()
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/airflow/dags/upload_file_to_s3.py", line 55, in read_csv_from_s3
+[2019-09-09 09:55:39,677] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     titanic_df = pd.read_csv(s3_file_path)
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 685, in parser_f
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     return _read(filepath_or_buffer, kwds)
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 440, in _read
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     filepath_or_buffer, encoding, compression
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/common.py", line 206, in get_filepath_or_buffer
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     from pandas.io import s3
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/io/s3.py", line 10, in <module>
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     "s3fs", extra="The s3fs package is required to handle s3 files."
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/pandas/compat/_optional.py", line 93, in import_optional_dependency
+[2019-09-09 09:55:39,678] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv     raise ImportError(message.format(name=name, extra=extra)) from None
+[2019-09-09 09:55:39,679] {base_task_runner.py:115} INFO - Job 21: Subtask read_csv ImportError: Missing optional dependency 's3fs'. The s3fs package is required to handle s3 files. Use pip or conda to install s3fs.
+[2019-09-09 09:55:42,608] {logging_mixin.py:95} INFO - [[34m2019-09-09 09:55:42,607[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 1[0m

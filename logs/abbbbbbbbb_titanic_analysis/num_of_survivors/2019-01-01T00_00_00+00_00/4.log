@@ -1,0 +1,55 @@
+[2019-09-10 17:26:03,618] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.num_of_survivors 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:26:03,625] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: abbbbbbbbb_titanic_analysis.num_of_survivors 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 17:26:03,625] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:26:03,625] {taskinstance.py:839} INFO - Starting attempt 4 of 4
+[2019-09-10 17:26:03,625] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 17:26:03,646] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): num_of_survivors> on 2019-01-01T00:00:00+00:00
+[2019-09-10 17:26:03,647] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'abbbbbbbbb_titanic_analysis', 'num_of_survivors', '2019-01-01T00:00:00+00:00', '--job_id', '117', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/titanic_dag.py', '--cfg_path', '/tmp/tmpzxb3ak70']
+[2019-09-10 17:26:04,080] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors [2019-09-10 17:26:04,080] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-10 17:26:04,354] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors [2019-09-10 17:26:04,354] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/titanic_dag.py
+[2019-09-10 17:26:04,583] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:26:04,583] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   DeprecationWarning)
+[2019-09-10 17:26:04,584] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 17:26:04,584] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   DeprecationWarning)
+[2019-09-10 17:26:04,665] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors [2019-09-10 17:26:04,664] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 17:26:04,701] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors [2019-09-10 17:26:04,701] {cli.py:516} INFO - Running <TaskInstance: abbbbbbbbb_titanic_analysis.num_of_survivors 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-10 17:26:04,743] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=abbbbbbbbb_titanic_analysis
+AIRFLOW_CTX_TASK_ID=num_of_survivors
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2019-09-10 17:26:04,743] {taskinstance.py:1051} ERROR - name 'titanic_df' is not defined
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/jennie/airflow/dags/task6_num_survivors.py", line 5, in num_of_survivors
+    df = preprocessing(titanic_df, 'Survived', -1)
+NameError: name 'titanic_df' is not defined
+[2019-09-10 17:26:04,743] {taskinstance.py:1082} INFO - Marking task as FAILED.
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors Traceback (most recent call last):
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/bin/airflow", line 32, in <module>
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     args.func(args)
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     return f(*args, **kwargs)
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+[2019-09-10 17:26:04,771] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     _run(args, dag, ti)
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     pool=args.pool,
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     return func(*args, **kwargs)
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     result = task_copy.execute(context=context)
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     return_value = self.execute_callable()
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-09-10 17:26:04,772] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors   File "/home/jennie/airflow/dags/task6_num_survivors.py", line 5, in num_of_survivors
+[2019-09-10 17:26:04,773] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors     df = preprocessing(titanic_df, 'Survived', -1)
+[2019-09-10 17:26:04,773] {base_task_runner.py:115} INFO - Job 117: Subtask num_of_survivors NameError: name 'titanic_df' is not defined
+[2019-09-10 17:26:08,566] {logging_mixin.py:95} INFO - [[34m2019-09-10 17:26:08,565[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 1[0m

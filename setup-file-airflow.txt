@@ -1,0 +1,13 @@
+1. airflow
+https://stackoverflow.com/questions/37048856/how-to-install-airflow
+www.youtube.com/watch?v=46YEL47ieQE
+https://medium.com/@umanium/installing-apache-airflow-in-my-machine-e4b00ce9667a
+https://blog.sicara.com/automate-aws-tasks-boto3-airflow-hooks-593c3120e8fc
+
+virtualenv -p python3 ~/virtualenv/airflow
+source /virtualenv/airflow/bin/activate
+export AIRFLOW_HOME=~/airflow
+airflow initdb
+airflow webserver -p 8080
+airflow scheduler
+

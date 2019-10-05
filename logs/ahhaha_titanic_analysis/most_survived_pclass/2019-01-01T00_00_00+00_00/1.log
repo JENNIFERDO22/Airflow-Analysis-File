@@ -1,0 +1,55 @@
+[2019-09-10 09:38:05,294] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: ahhaha_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 09:38:05,300] {taskinstance.py:620} INFO - Dependencies all met for <TaskInstance: ahhaha_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [queued]>
+[2019-09-10 09:38:05,300] {taskinstance.py:838} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 09:38:05,300] {taskinstance.py:839} INFO - Starting attempt 1 of 1
+[2019-09-10 09:38:05,300] {taskinstance.py:840} INFO - 
+--------------------------------------------------------------------------------
+[2019-09-10 09:38:05,320] {taskinstance.py:859} INFO - Executing <Task(PythonOperator): most_survived_pclass> on 2019-01-01T00:00:00+00:00
+[2019-09-10 09:38:05,321] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'ahhaha_titanic_analysis', 'most_survived_pclass', '2019-01-01T00:00:00+00:00', '--job_id', '77', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/operations.py', '--cfg_path', '/tmp/tmp9rapy1yo']
+[2019-09-10 09:38:05,791] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass [2019-09-10 09:38:05,791] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-09-10 09:38:06,082] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass [2019-09-10 09:38:06,081] {dagbag.py:90} INFO - Filling up the DagBag from /home/jennie/airflow/dags/operations.py
+[2019-09-10 09:38:06,315] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 09:38:06,315] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   DeprecationWarning)
+[2019-09-10 09:38:06,315] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass /home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/helpers.py:423: DeprecationWarning: Importing 'DummyOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-09-10 09:38:06,315] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   DeprecationWarning)
+[2019-09-10 09:38:06,334] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass [2019-09-10 09:38:06,334] {credentials.py:1182} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2019-09-10 09:38:13,474] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass [2019-09-10 09:38:13,473] {cli.py:516} INFO - Running <TaskInstance: ahhaha_titanic_analysis.most_survived_pclass 2019-01-01T00:00:00+00:00 [running]> on host Jennie-ubuntu-GX501VSK
+[2019-09-10 09:38:13,481] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=ahhaha_titanic_analysis
+AIRFLOW_CTX_TASK_ID=most_survived_pclass
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2019-09-10 09:38:13,481] {taskinstance.py:1051} ERROR - name 'logging' is not defined
+Traceback (most recent call last):
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/jennie/airflow/dags/task4_pclass_most_survived.py", line 55, in most_survived_pclass
+    logging.critical("titanic df")
+NameError: name 'logging' is not defined
+[2019-09-10 09:38:13,482] {taskinstance.py:1082} INFO - Marking task as FAILED.
+[2019-09-10 09:38:13,522] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass Traceback (most recent call last):
+[2019-09-10 09:38:13,522] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/bin/airflow", line 32, in <module>
+[2019-09-10 09:38:13,523] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     args.func(args)
+[2019-09-10 09:38:13,523] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-09-10 09:38:13,523] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     return f(*args, **kwargs)
+[2019-09-10 09:38:13,523] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 522, in run
+[2019-09-10 09:38:13,523] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     _run(args, dag, ti)
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/bin/cli.py", line 440, in _run
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     pool=args.pool,
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     return func(*args, **kwargs)
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 926, in _run_raw_task
+[2019-09-10 09:38:13,524] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     result = task_copy.execute(context=context)
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 113, in execute
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     return_value = self.execute_callable()
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/workspace/airflow_venv/lib/python3.7/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass   File "/home/jennie/airflow/dags/task4_pclass_most_survived.py", line 55, in most_survived_pclass
+[2019-09-10 09:38:13,525] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass     logging.critical("titanic df")                                                                                                                                                                 
+[2019-09-10 09:38:13,526] {base_task_runner.py:115} INFO - Job 77: Subtask most_survived_pclass NameError: name 'logging' is not defined
+[2019-09-10 09:38:15,320] {logging_mixin.py:95} INFO - [[34m2019-09-10 09:38:15,319[0m] {[34mlocal_task_job.py:[0m105} INFO[0m - Task exited with return code 1[0m
